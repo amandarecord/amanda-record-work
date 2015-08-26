@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Positioning</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<style type="text/css">
+
+			/* Clear fix hack */
+			.clearfix:after {
+				content: ".";
+				display: block;
+				clear: both;
+				visibility: hidden;
+				line-height: 0;
+				height: 0;
+			}
+
+			div#container {
+
+				max-width: 960px;
+				margin: 20px auto;
+				height: 500px;
+				border: 2px solid #000;
+
+			}
+
+			div#road {
+				max-width: 960px;
+				margin: 20px auto;
+				height: 5500px;
+				border: 2px solid #000;
+				background-color: black;
+				position: relative;
+				/*overflow: hidden;*/
+
+			}
+			
+			div#red {
+			/*top: 480px;*/
+			/*left: 500px;*/
+
+				left: 200px;
+				top: 200px;
+				Position: absolute;
+				z-index: 300px;
+
+
+			}
+			div#blue{
+			/*top: 480px;*/
+			/*left: 500px;*/
+				
+
+				left: 100px;
+				top: 120px;
+				Position: absolute;
+				z-index: 301px;
+
+			}
+
+		</style>
+
+	</head>
+	<body>
+
+		<div id="road">
+
+			<div id="red"><img src="car.png"></div>
+			<div id="blue"><img src="car-2.png"></div>
+			
+
+		</div>
+		
+	</body>
+</html>
